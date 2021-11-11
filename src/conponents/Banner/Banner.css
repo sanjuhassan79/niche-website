@@ -1,0 +1,40 @@
+.banner__hone{
+    background-image:linear-gradient(to right, #6a2b36
+    , rgba(150, 60, 75, 0.438)), url('https://cdn.shopify.com/s/files/1/0462/3361/6544/files/slider-1_2000x.jpg?v=1597745711');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner__itile {
+    margin-left: 20rem;
+}
+.banner__itile h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #eeebeb;
+}
+.banner__itile p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #1e1318;
+    margin-bottom: 3rem;
+}
+.btn__color {
+    color: #6a2b36;
+    border: 1px solid #1e1318;
+    padding: 10px 32px ;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.btn__color:hover {
+    color: #eee6eb;
+    background-color: #1e1318;
+}

@@ -1,0 +1,12 @@
+.header-rev {
+    background-image:linear-gradient(to right, #705392
+    , rgba(150, 60, 75, 0.438)), url('https://lcpshop.net/wp-content/uploads/2018/03/52148-8fa14cdd754f91cc6554c9e71929cce7.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}

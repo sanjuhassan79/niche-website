@@ -1,24 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+// import Navbar from './components/pages/Navbar/Navbar';
+// import Home from './components/pages/Home/Home';
+// import Login from './components/pages/Login/Login';
+// import Register from './components/pages/Register/Register';
 
+import './App.css';
+import Dashboard from "./conponents/Dashboard/Dashboard";
+import Explore from "./conponents/Explore/Explore";
+import AuthProvider from "./conponents/Firebase/contexts/AuthProvider";
+import Home from "./conponents/Home/Home";
+import Login from "./conponents/Login/Login";
+import PrivateRoute from "./conponents/PrivateRoute/PrivateRoute";
+import ProductDetail from "./conponents/ProductDetail/ProductDetail";
+
+import Register from "./conponents/Register/Register";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <AuthProvider>
+    <Router>
+    <div>
+      
+
+      {/* A <Switch> looks through its children <Route>s and
+          renders the first one that matches the current URL. */}
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/Home">
+          <Home></Home>
+        </Route>
+        <Route path="/Register">
+             <Register /> 
+          </Route>
+        <Route path="/Login">
+             <Login /> 
+          </Route>
+        <PrivateRoute path="/Dashboard">
+             <Dashboard /> 
+          </PrivateRoute>
+        <Route path="/explore">
+             <Explore /> 
+          </Route>
+          <PrivateRoute path="/productDetail/:Productid">
+             <ProductDetail /> 
+          </PrivateRoute>
+        
+      </Switch>
     </div>
+  </Router>
+  </AuthProvider>
   );
 }
 
