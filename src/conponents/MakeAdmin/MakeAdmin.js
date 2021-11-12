@@ -1,4 +1,4 @@
-import { Alert, Button, TextField } from '@mui/material';
+import { Alert, Button, Grid, TextField } from '@mui/material';
 import React, { useState } from 'react';
 
 const MakeAdmin = () => {
@@ -29,8 +29,11 @@ if(data.modifiedCount){
 e.preventDefault()
     }
     return (
-        <div>
-            <h1>MakeAdmin</h1>
+        <div className="header-rev">
+
+<Grid container spacing={2}>
+  <Grid item xs={12} md={6}sx={{mx:'auto',mt:6}}>
+  <h1>Make Admin</h1>
             <form onSubmit={handleAddmin}>
 
             <TextField 
@@ -41,11 +44,17 @@ e.preventDefault()
                name="email"
                type="email"
                variant="standard" />
-               <Button type="submit" sx={{width:'100%',m:2}} variant="contained">Register</Button>
+               <Button type="submit" style={{backgroundColor:'rgb(95, 46, 61)'}} sx={{width:'100%',m:2}} variant="contained">Add Admin</Button>
                
             </form>
-            {success && <Alert severity="success">This is a success alert — check it out!</Alert> }
+            {success && <Alert severity="success">added successfully admin !</Alert> }
               
+  </Grid>
+  
+  
+</Grid>
+
+           
         </div>
     );
 };

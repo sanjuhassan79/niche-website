@@ -51,13 +51,13 @@ let { path, url } = useRouteMatch();
       <Toolbar />
       <Divider />
 
-      <Link to={`${url}`}style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
+      <Link to={`${url}`}style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',marginTop: '3rem',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>My Orders</Link> <br />
      
-      <Link to={`${url}/pay`}style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
+      <Link to={`${url}/pay`}style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>Orders Pay</Link> <br />
     
-      <Link to={`${url}/review`}style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
+      <Link to={`${url}/review`}style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>Review</Link> <br />
 
 
@@ -65,17 +65,18 @@ let { path, url } = useRouteMatch();
 
  { admin &&   <Box>
    
-  <Link to={`${url}/makeAdmin`}style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
-    fontweight: '400',display: 'block'}}>Make Admin</Link> <br />
-      <Link to={`${url}/manageAllOrders`}style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
+  <Link to={`${url}/makeAdmin`}style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',
+    fontweight: '400',display: 'block',textTransform:'uppercase'
+    }}>Make Admin</Link> <br />
+      <Link to={`${url}/manageAllOrders`}style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>Manage All Orders</Link> <br />
-      <Link to={`${url}/addProduct`}style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
+      <Link to={`${url}/addProduct`}style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>Add Product</Link> <br />
-      <Link to={`${url}/manageProducts`}style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
+      <Link to={`${url}/manageProducts`}style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>Manage Products</Link> <br />
    
    </Box>}
-      <Button onClick={logout} style={{textDecoration:'none', color:'red',padding:'0px 28px',fontSize: '15px',
+      <Button onClick={logout} style={{textDecoration:'none', color:'white',padding:'0px 28px',fontSize: '12px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}color="inherit">Logout</Button>
      
     </div>
@@ -105,11 +106,12 @@ let { path, url } = useRouteMatch();
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+          nellie
           </Typography>
         </Toolbar>
       </AppBar>
       <Box
+      style={{backgroundColor: '#583149'}} 
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
@@ -133,11 +135,13 @@ let { path, url } = useRouteMatch();
           {drawer}
         </Drawer>
         <Drawer
-          variant="permanent"
+        
+        variant="permanent"
+        
           sx={{
             
             display: { xs: 'none', sm: 'block' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': {bgcolor: '#583149', boxSizing: 'border-box', width: drawerWidth },
           }}
           open
         >
@@ -149,7 +153,7 @@ let { path, url } = useRouteMatch();
         component="main"
         sx={{ flexGrow: 1, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
-        <Toolbar  />
+        <Toolbar style={{backgroundColor: '#583149'}} />
         <Switch>
         <Route exact path={path}>
         <MyOrders />

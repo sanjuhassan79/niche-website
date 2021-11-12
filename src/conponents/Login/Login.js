@@ -35,7 +35,7 @@ const Login = () => {
 
             <Grid container >
                 <Grid item xs={12} md={12} style={{display: 'flex',justifyContent: 'center',alignItems: 'center'}}>
-                <Paper  elevation={1} sx={{width:'50%',m:5,p:5}} > 
+                <Paper  elevation={1} sx={{width:'100%',mt:5,p:1}} > 
                 <Typography variant="h5" gutterBottom>
                 Login your account
       
@@ -45,7 +45,7 @@ const Login = () => {
               <form  onSubmit={handleLoginSubmit}>
               
                <TextField 
-               sx={{width:'100%',m:2}} 
+               sx={{width:'75%',m:2}} 
                id="standard-basic" 
                label="Your Email" 
                onBlur={handleOnBlur}
@@ -53,7 +53,7 @@ const Login = () => {
                type="email"
                variant="standard" />
                  <TextField
-                            sx={{ width: '100%', m: 2 }}
+                            sx={{ width: '75%', m: 2 }}
                             id="standard-basic"
                             label="Your Password"
                             type="password"
@@ -62,9 +62,9 @@ const Login = () => {
                             variant="standard" />
                         
                
-               <Button type="submit" sx={{width:'100%',m:2}} variant="contained">Register</Button>
+               <Button type="submit" sx={{width:'75%',m:2}} style={{backgroundColor:'#6a2b36'}}variant="contained">Register</Button>
                <br />
-               <Button onClick={handleGoogle} sx={{width:'100%',m:2}} variant="contained">Continue with Google</Button>
+               <Button onClick={handleGoogle} sx={{width:'75%',m:2}} style={{backgroundColor:'#6a2b36'}}variant="contained">Continue with Google</Button>
                <br />
                <NavLink 
                style={{textDecoration:'none'}}

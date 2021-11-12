@@ -40,7 +40,8 @@ console.log(registerUser);
 
             <Grid container >
                 <Grid item xs={12} md={12} style={{display: 'flex',justifyContent: 'center',alignItems: 'center'}}>
-                <Paper  elevation={1} sx={{width:'50%',m:5,p:5}} > 
+                <Paper  elevation={3} sx={{width:'100%',mt:10,p:1}} > 
+                {/* sx={{width:'50%',m:5,p:5}} */}
                 <Typography variant="h5" gutterBottom>
                 Create an account
       
@@ -49,14 +50,14 @@ console.log(registerUser);
               
               <form  onSubmit={handleLoginSubmit}>
                <TextField 
-               sx={{width:'100%',m:2}} 
+               sx={{width:'75%',m:2}} 
                id="standard-basic" 
                label="Your Name" 
                onBlur={handleOnBlur}
                name="name"
                variant="standard" />
                <TextField 
-               sx={{width:'100%',m:2}} 
+               sx={{width:'75%',m:2}} 
                id="standard-basic" 
                label="Your Email" 
                onBlur={handleOnBlur}
@@ -64,7 +65,7 @@ console.log(registerUser);
                type="email"
                variant="standard" />
                  <TextField
-                            sx={{ width: '100%', m: 2 }}
+                            sx={{ width: '75%', m: 2 }}
                             id="standard-basic"
                             label="Your Password"
                             type="password"
@@ -72,7 +73,7 @@ console.log(registerUser);
                             onBlur={handleOnBlur}
                             variant="standard" />
                         <TextField
-                            sx={{ width: '100%', m: 2 }}
+                            sx={{ width: '75%', m: 2 }}
                             id="standard-basic"
                             label="Confrim password"
                             type="password"
@@ -80,9 +81,9 @@ console.log(registerUser);
                             onBlur={handleOnBlur}
                             variant="standard" />
                
-               <Button type="submit" sx={{width:'100%',m:2}} variant="contained">Register</Button>
+               <Button type="submit" sx={{width:'75%',m:2}} style={{backgroundColor:'#6a2b36'}} variant="contained">Register</Button>
                <br />
-               <Button onClick={handleGoogle} sx={{width:'100%',m:2}} variant="contained">Continue with Google</Button>
+               <Button onClick={handleGoogle} sx={{width:'75%',m:2}} style={{backgroundColor:'#6a2b36'}}variant="contained">Continue with Google</Button>
                <br />
                <NavLink 
                style={{textDecoration:'none'}}
