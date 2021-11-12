@@ -62,7 +62,7 @@ const Login = () => {
                             variant="standard" />
                         
                
-               <Button type="submit" sx={{width:'75%',m:2}} style={{backgroundColor:'#6a2b36'}}variant="contained">Register</Button>
+               <Button type="submit" sx={{width:'75%',m:2}} style={{backgroundColor:'#6a2b36'}}variant="contained">Login</Button>
                <br />
                <Button onClick={handleGoogle} sx={{width:'75%',m:2}} style={{backgroundColor:'#6a2b36'}}variant="contained">Continue with Google</Button>
                <br />
@@ -74,7 +74,7 @@ const Login = () => {
              
                
               {isLoading && <CircularProgress />}
-               {user?.email && <Alert severity="success">This is a success alert — check it out!</Alert>}
+               {user?.email && <Alert severity="success">Your Login Is Successfully</Alert>}
                {authError && <Alert severity="error">{authError}</Alert>} 
 
 

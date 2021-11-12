@@ -34,8 +34,8 @@ const {Productid}=useParams()
                 <h4 className="title__p">{products.name}</h4>
                 <h6 className="title__pri">$ {products.price}</h6>
                 <p className="title__des">{products.description}</p>
-                {ProductSuccess && <Alert severity="success">Appointment Booked successfully!</Alert>}
-                <Button onClick={handleProductOpen} variant="contained">BOOK APPOINTMENT</Button>
+                {ProductSuccess && <Alert severity="success">Purchase Product successfully!</Alert>}
+                <Button onClick={handleProductOpen} variant="contained">Purchase Product</Button>
                 </Grid>
                 </Grid>
 

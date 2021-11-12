@@ -41,7 +41,7 @@ console.log(registerUser);
             <Grid container >
                 <Grid item xs={12} md={12} style={{display: 'flex',justifyContent: 'center',alignItems: 'center'}}>
                 <Paper  elevation={3} sx={{width:'100%',mt:10,p:1}} > 
-                {/* sx={{width:'50%',m:5,p:5}} */}
+               
                 <Typography variant="h5" gutterBottom>
                 Create an account
       
@@ -93,7 +93,7 @@ console.log(registerUser);
               
                }
              {isLoading && <CircularProgress />}
-               {user?.email && <Alert severity="success">This is a success alert — check it out!</Alert> }
+               {user?.email && <Alert severity="success">Your Registration Ss Successfully</Alert> }
                {authError && <Alert severity="error">{authError}</Alert>} 
  
 

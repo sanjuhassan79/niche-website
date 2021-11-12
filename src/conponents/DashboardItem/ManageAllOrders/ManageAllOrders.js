@@ -37,13 +37,7 @@ const handleDelete=(id)=>{
 
 
 }
-// const handleOnBlur = e => {
-    
-//     setoption(e.target.value);
-    
-// }
 
-//  console.log(option);
 const handleStatus=(id)=>{
    
     fetch(`https://morning-ocean-42077.herokuapp.com/productsale/${id}`,{
@@ -52,7 +46,7 @@ const handleStatus=(id)=>{
     headers:{"content-type":"application/json"},
     body:JSON.stringify(
        {
-    status:"approved"
+    status:"shipped"
    }
     
     )

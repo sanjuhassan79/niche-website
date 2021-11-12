@@ -12,37 +12,11 @@ import useAuth from '../Firebase/useAuth';
 import { Divider, useTheme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
-
-
-
-
-
 import Drawer from '@mui/material/Drawer';
 
 import List from '@mui/material/List';
-// import Divider from '@mui/material/Divider';
+
 import ListItem from '@mui/material/ListItem';
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import ListItemText from '@mui/material/ListItemText';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import MailIcon from '@mui/icons-material/Mail';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -81,34 +55,13 @@ const theme=useTheme()
   const{navIcon,navItemContainner,navLogo,itemAlien}= useStyke()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   const [state, setState] = React.useState(false);
 
-  // const toggleDrawer = (anchor, open) => (event) => {
-  //   if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-  //     return;
-  //   }
-
-  //   setState({ ...state, [anchor]: open });
-  // };
 
   const list =  (
     <Box
-      sx={{ width:250 }}
+      sx={{ width:250}}
       role="presentation"
-      // onClick={toggleDrawer(anchor, false)}
-      // onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
        
@@ -122,6 +75,12 @@ const theme=useTheme()
             <br />
             <Divider/>
             
+            <Link to='/Contact'style={{textDecoration:'none', color:'#6a2b36',padding:'0px 28px',fontSize: '15px',textTransform:'uppercase',
+    fontweight: '400',display: 'block'}}>Contact</Link>
+        
+          
+            <Divider/>
+            <br />
             <Link to='/Explore'style={{textDecoration:'none', color:'#6a2b36',padding:'0px 28px',fontSize: '15px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>Explore</Link>
         
@@ -161,11 +120,6 @@ const theme=useTheme()
         }
 
 
-
-
-
-
-
           </ListItem>
         
       </List>
@@ -173,15 +127,7 @@ const theme=useTheme()
     </Box>
   );
 
-
-
-
-
-
-
-
-
-
+      
     return (
         
     <>
@@ -208,6 +154,8 @@ const theme=useTheme()
         
         <Link to='/Explore'style={{textDecoration:'none', color:'white'}}><Button color="inherit">Explore</Button></Link>
         
+        <Link to='/Contact'style={{textDecoration:'none', color:'white'}}><Button color="inherit">Contact</Button></Link>
+        
         
         <Link to='/Register'style={{textDecoration:'none', color:'white'}}><Button color="inherit">Register</Button></Link>
         
@@ -228,16 +176,6 @@ const theme=useTheme()
     </AppBar>
   </Box>
     
-    
-    
-
-
-
-
-
-
-
-
   <div>
      
         <React.Fragment>

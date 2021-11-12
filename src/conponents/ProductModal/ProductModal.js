@@ -33,8 +33,7 @@ const ProductModal = ({ products, handleProductClose, openProduct,setProductSucc
     }
 
     const handleProductSubmit = e => {
-        // collect data
-        // const img= user.img
+      
         const appointment = {
             ...ProductInfo,
             img,

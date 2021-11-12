@@ -9,6 +9,7 @@ import {
 // import Register from './components/pages/Register/Register';
 
 import './App.css';
+import Contact from "./conponents/Contact/Contact";
 import Dashboard from "./conponents/Dashboard/Dashboard";
 import Explore from "./conponents/Explore/Explore";
 import AuthProvider from "./conponents/Firebase/contexts/AuthProvider";
@@ -34,6 +35,9 @@ function App() {
         <Route path="/Home">
           <Home></Home>
         </Route>
+        <Route path="/contact">
+             <Contact /> 
+          </Route>
         <Route path="/Register">
              <Register /> 
           </Route>

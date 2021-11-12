@@ -7,7 +7,7 @@ const Banner = () => {
 
                 <h1>Get your nails <br />an extravagant look </h1>
                 <p>Ready for party! Give it a finishing touch <br /> by polishing </p>
-                <button type="button" class="btn__color">shop New</button>
+                <button type="button" className="btn__color">shop New</button>
 
 
             </div>
