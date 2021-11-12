@@ -108,7 +108,7 @@ const Contact = () => {
                 <TextField
                     sx={{ width: '75%', m: 2 }}
                     id="standard-basic"
-                    label="Your Subject"
+                    label="Your Text"
                     multiline
                     rows={5}
                     
