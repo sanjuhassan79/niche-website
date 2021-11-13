@@ -151,14 +151,3 @@ footer .main-footer {
   }
   
   
-  
-  .btn:hover,
-  .btn:focus,
-  .btn.active {
-    background: #d94f79;
-    color: #d94f79;
-    
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  ;
-  }
-  

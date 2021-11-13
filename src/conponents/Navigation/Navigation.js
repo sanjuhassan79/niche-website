@@ -81,6 +81,13 @@ const theme=useTheme()
           
             <Divider/>
             <br />
+            <Link to='/About'style={{textDecoration:'none', color:'#6a2b36',padding:'0px 28px',fontSize: '15px',textTransform:'uppercase',
+    fontweight: '400',display: 'block'}}>About</Link>
+        
+          
+            <Divider/>
+            <br />
+            <br />
             <Link to='/Explore'style={{textDecoration:'none', color:'#6a2b36',padding:'0px 28px',fontSize: '15px',textTransform:'uppercase',
     fontweight: '400',display: 'block'}}>Explore</Link>
         
@@ -155,6 +162,8 @@ const theme=useTheme()
         <Link to='/Explore'style={{textDecoration:'none', color:'white'}}><Button color="inherit">Explore</Button></Link>
         
         <Link to='/Contact'style={{textDecoration:'none', color:'white'}}><Button color="inherit">Contact</Button></Link>
+        
+        <Link to='/About'style={{textDecoration:'none', color:'white'}}><Button color="inherit">About</Button></Link>
         
         
         <Link to='/Register'style={{textDecoration:'none', color:'white'}}><Button color="inherit">Register</Button></Link>

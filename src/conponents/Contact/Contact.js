@@ -2,12 +2,13 @@ import { Grid, TextField,Button,Container } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
-import './Contact.css'
+
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import Footer from '../Footer/Footer';
+import Offer from '../Offer/Offer';
 const Contact = () => {
 
 
@@ -130,8 +131,8 @@ const Contact = () => {
       
       <div className={contact_address}>
 
-            <div class={icon_wrapper}>
-                <div class={icon}>
+            <div className={icon_wrapper}>
+                <div className={icon}>
                 <LocalPhoneIcon/> 
                 </div>
                 
@@ -145,8 +146,8 @@ const Contact = () => {
   <Grid item xs={12} md={6}>
   <div className={contact_address}>
 
-<div class={icon_wrapper}>
-    <div class={icon}>
+<div className={icon_wrapper}>
+    <div className={icon}>
     <EmailIcon/> 
     </div>
     
@@ -159,8 +160,8 @@ const Contact = () => {
   <Grid item xs={12} md={6}>
   <div className={contact_address}>
 
-<div class={icon_wrapper}>
-    <div class={icon}>
+<div className={icon_wrapper}>
+    <div className={icon}>
     <AddLocationAltIcon/> 
     </div>
     
@@ -173,8 +174,8 @@ const Contact = () => {
   <Grid item xs={12} md={6}>
   <div className={contact_address}>
 
-            <div class={icon_wrapper}>
-                <div class={icon}>
+            <div className={icon_wrapper}>
+                <div className={icon}>
                 <AccessTimeFilledIcon/> 
                 </div>
                 
@@ -189,7 +190,7 @@ const Contact = () => {
  
         </Grid>
         </Container>
-        
+        <Offer></Offer>
 <Footer></Footer>
         </>
     );
