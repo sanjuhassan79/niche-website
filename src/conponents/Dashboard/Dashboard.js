@@ -32,7 +32,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import AdminRoute from '../AdminRoute/AdminRoute';
-
+import './Dashboard.css'
 const drawerWidth = 200;
 
 
